@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clase 5</title>
+	<link rel="icon" href="chrome.ico"
+</head>
+<body>
+	<center>
+		<img src="perrito.jpg" alt="ricardo leguizamon" title="perrito" width="500px" height="500px">
+		<h1>esto va centrado</h1>
+	</center>
+	<a href="#codigo">Click aqui para ir al codigo </a>
+	<p><center>
+		La topología de muchas redes LAN alámbricas está basada en los enlaces de punto a punto. El estándar
+IEEE 802.3, comúnmente conocido como Ethernet, es hasta ahora el tipo más común de LAN
+alámbrica. La figura 1-8(b) muestra un ejemplo de topología de Ethernet conmutada. Cada computadora
+se comunica mediante el protocolo Ethernet y se conecta a una caja conocida como switch con un enlace
+de punto a punto. De aquí que tenga ese nombre. Un switch tiene varios puertos, cada uno de los cuales
+se puede conectar a una computadora. El trabajo del switch es transmitir paquetes entre las computadoras
+conectadas a él, y utiliza la dirección en cada paquete para determinar a qué computadora se lo
+debe enviar.
+Para crear redes LAN más grandes se pueden conectar switches entre sí mediante sus puertos. ¿Qué
+ocurre si los conectamos en un circuito cerrado? ¿Podrá funcionar la red así? Por fortuna, los diseñadores
+consideraron este caso. Es responsabilidad del protocolo determinar qué rutas deben recorrer los
+paquetes para llegar de manera segura a la computadora de destino. En el capítulo 4 veremos cómo
+funciona esto.
+También es posible dividir una gran LAN física en dos redes LAN lógicas más pequeñas. Tal vez
+se pregunte por qué sería esto útil. En ocasiones la distribución del equipo de red no coincide con la
+estructura de la organización. Por ejemplo, los departamentos de ingeniería y finanzas de una empresa
+podrían tener computadoras en la misma LAN física debido a que se encuentran en la misma ala del
+edificio, pero podría ser más sencillo administrar el sistema si cada departamento tuviera su propia red
+lógica, denominada LAN virtual o VLAN. En este diseño cada puerto se identifica con un “color”; por
+ejemplo, verde para ingeniería y rojo para finanzas. Después el switch reenvía los paquetes de manera
+que las computadoras conectadas a los puertos verdes estén separadas de las que están conectadas a los
+puertos rojos. Por ejemplo, los paquetes de difusión que se envíen por un puerto rojo no se recibirán
+en un puerto verde, tal como si hubiera dos redes LAN distintas. Al final del capítulo 4 veremos los
+detalles sobre las redes VLAN.
+También existen otras topologías de LAN alámbrica. De hecho, la Ethernet conmutada es una versión
+moderna del diseño original de Ethernet en el que se difundían todos los paquetes a través de un solo cable
+lineal. Sólo una máquina podía transmitir con éxito en un instante dado, y se utilizaba un mecanismo de
+arbitraje distribuido para resolver los conflictos. Utilizaba un algoritmo simple: las computadoras podían
+transmitir siempre que el cable estuviera inactivo. Si ocurría una colisión entre dos o más paquetes, cada
+computadora esperaba un tiempo aleatorio y volvía a intentar. Llamaremos a esa versión Ethernet clásica
+por cuestión de claridad y, como tal vez se lo imagine, aprenderá sobre ella en el capítulo 4.
+Las redes inalámbricas y las alámbricas se pueden dividir en diseños estáticos y dinámicos, dependiendo
+de la forma en que se asigna el canal. Una asignación estática típica sería dividir el tiempo en
+intervalos discretos y utilizar un algoritmo por turno rotatorio (round-robin), para que cada máquina pueda
+difundir los datos sólo cuando sea su turno de usar su intervalo. La asignación estática desperdicia la
+capacidad del canal cuando una máquina no tiene nada que decir durante su intervalo asignado, por lo que
+la mayoría de los sistemas tratan de asignar el canal en forma dinámica (es decir, bajo demanda).
+Los métodos de asignación dinámica para un canal común pueden ser centralizados o descentralizados.
+En el método de asignación de canal centralizado hay una sola entidad (por ejemplo, la estación
+base en las redes celulares) que determina el turno de cada quien. Para ello podría aceptar varios paquetes
+y asignarles prioridades de acuerdo con algún algoritmo interno. En el método de asignación de canal
+descentralizado no hay una entidad central; cada máquina debe decidir por su cuenta si va a transmitir o
+no. Tal vez usted piense que esta metodología provoca un caos, pero no es así. Más adelante estudiaremos
+muchos algoritmos diseñados para poner orden a un potencial caos.
+La topología de muchas redes LAN alámbricas está basada en los enlaces de punto a punto. El estándar
+IEEE 802.3, comúnmente conocido como Ethernet, es hasta ahora el tipo más común de LAN
+alámbrica. La figura 1-8(b) muestra un ejemplo de topología de Ethernet conmutada. Cada computadora
+se comunica mediante el protocolo Ethernet y se conecta a una caja conocida como switch con un enlace
+de punto a punto. De aquí que tenga ese nombre. Un switch tiene varios puertos, cada uno de los cuales
+se puede conectar a una computadora. El trabajo del switch es transmitir paquetes entre las computadoras
+conectadas a él, y utiliza la dirección en cada paquete para determinar a qué computadora se lo
+debe enviar.
+Para crear redes LAN más grandes se pueden conectar switches entre sí mediante sus puertos. ¿Qué
+ocurre si los conectamos en un circuito cerrado? ¿Podrá funcionar la red así? Por fortuna, los diseñadores
+consideraron este caso. Es responsabilidad del protocolo determinar qué rutas deben recorrer los
+paquetes para llegar de manera segura a la computadora de destino. En el capítulo 4 veremos cómo
+funciona esto.
+También es posible dividir una gran LAN física en dos redes LAN lógicas más pequeñas. Tal vez
+se pregunte por qué sería esto útil. En ocasiones la distribución del equipo de red no coincide con la
+estructura de la organización. Por ejemplo, los departamentos de ingeniería y finanzas de una empresa
+podrían tener computadoras en la misma LAN física debido a que se encuentran en la misma ala del
+edificio, pero podría ser más sencillo administrar el sistema si cada departamento tuviera su propia red
+lógica, denominada LAN virtual o VLAN. En este diseño cada puerto se identifica con un “color”; por
+ejemplo, verde para ingeniería y rojo para finanzas. Después el switch reenvía los paquetes de manera
+que las computadoras conectadas a los puertos verdes estén separadas de las que están conectadas a los
+puertos rojos. Por ejemplo, los paquetes de difusión que se envíen por un puerto rojo no se recibirán
+en un puerto verde, tal como si hubiera dos redes LAN distintas. Al final del capítulo 4 veremos los
+detalles sobre las redes VLAN.
+También existen otras topologías de LAN alámbrica. De hecho, la Ethernet conmutada es una versión
+moderna del diseño original de Ethernet en el que se difundían todos los paquetes a través de un solo cable
+lineal. Sólo una máquina podía transmitir con éxito en un instante dado, y se utilizaba un mecanismo de
+arbitraje distribuido para resolver los conflictos. Utilizaba un algoritmo simple: las computadoras podían
+transmitir siempre que el cable estuviera inactivo. Si ocurría una colisión entre dos o más paquetes, cada
+computadora esperaba un tiempo aleatorio y volvía a intentar. Llamaremos a esa versión Ethernet clásica
+por cuestión de claridad y, como tal vez se lo imagine, aprenderá sobre ella en el capítulo 4.
+Las redes inalámbricas y las alámbricas se pueden dividir en diseños estáticos y dinámicos, dependiendo
+de la forma en que se asigna el canal. Una asignación estática típica sería dividir el tiempo en
+intervalos discretos y utilizar un algoritmo por turno rotatorio (round-robin), para que cada máquina pueda
+difundir los datos sólo cuando sea su turno de usar su intervalo. La asignación estática desperdicia la
+capacidad del canal cuando una máquina no tiene nada que decir durante su intervalo asignado, por lo que
+la mayoría de los sistemas tratan de asignar el canal en forma dinámica (es decir, bajo demanda).
+Los métodos de asignación dinámica para un canal común pueden ser centralizados o descentralizados.
+En el método de asignación de canal centralizado hay una sola entidad (por ejemplo, la estación
+base en las redes celulares) que determina el turno de cada quien. Para ello podría aceptar varios paquetes
+y asignarles prioridades de acuerdo con algún algoritmo interno. En el método de asignación de canal
+descentralizado no hay una entidad central; cada máquina debe decidir por su cuenta si va a transmitir o
+no. Tal vez usted piense que esta metodología provoca un caos, pero no es así. Más adelante estudiaremos
+muchos algoritmos diseñados para poner orden a un potencial caos.
+	</center>
+	</p>
+	<h2 id="codigo">este es el codigo: DXDXD</h2>
+</body>
+</html>

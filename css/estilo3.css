@@ -1,0 +1,29 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/*.contenedir div{
+    float: left;
+    width: 45%;
+}*/
+.primario:hover {
+    background: red;
+    /*float: right;*/
+    height: 200px;
+    width: 200px;   
+}
+
+.secundario{
+    background: rgb(255,0,0);
+}
+.texto {
+   padding: 20px; 
+}
+.texto::first-line{
+    font-size:  60px;
+}
+b::before{
+    content: "hola que tal ricardo"
+}

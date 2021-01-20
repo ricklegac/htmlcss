@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact-form{
+     font-size: 20px;
+     background-color:white;
+     width: 50vw; /*w width*/
+     height: 50vh;/*h height*/
+}
+.contact-form-h2{
+    font-size: 5em; /*tamaño de la fuenta em en el navegador predeterminado es 16px*/
+    /*em depende de la caja que le contiene*/
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1; /*el tamaño que ocupa la letra sera .5 arriba .5 abajo mitad mitad*/
+    font-weight: normal; /*grosor de la letra tipo negrita*/
+    font-stretch: normal;/*es muy inutil*/
+    font-variant: small-caps;/*es muy inutil*/
+    color:red;
+}
+.contact-form-h2__p{
+    color:black;
+}
+ h2 {
+    display: block; /*puede ser block o inline, para comportamiento de las cajas*/
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    /*podemos darle 20px para darle a todos 20px*/
+    /*pading 20px 30px ejex ejey*/
+    height: 100px; /*alto*/
+    width: 100px; /*ancho*/
+    box-sizing: border-box;
+    text-align: center; /*centramos el texto*/
+} 
+.caja1{
+    width:200px;
+    height: 200px;
+    background: yellow;
+    margin: auto;
+    border: 10px blueviolet; /*en vez de border podemos darle outline*/
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin: auto;
+    border: 10px yellowgreen;
+}
