@@ -30,13 +30,24 @@
     text-align: right;
     margin-right: 5px;
 }
+.nav__responsive-button{
+    float: right;
+    font-size: 25px;
+    padding: 6px 20px;
+}
 
-
-@media only screen and {max-width: 500px} {
+@media only screen and ( max-width: 500px ) {
     .nav__ul{
         display: none;
     }
     .nav__responsive-ul{
         display: block;
+        position: absolute;
+        width: 100%;
+        background-color: slateblue;
+    }
+    .nav {
+        height: 37px;
+        width: 100px;
     }
 }
