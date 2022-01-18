@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+/*ENCABEZADO*/
+
+.border{
+    background-color: #243862;
+    text-align: center;
+    padding: 5px 0;
+}
+.header-title{
+    color: #fff;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.header-description{
+    color: #fff;
+    padding: 10px 0;
+}
+
+/*REPUESTA*/
